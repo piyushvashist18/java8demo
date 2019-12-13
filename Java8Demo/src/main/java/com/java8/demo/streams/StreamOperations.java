@@ -47,4 +47,10 @@ public class StreamOperations {
 			System.out.println(i);
 		}
 	}
+	
+	public void ops(){
+		List<String> data = Arrays.asList("abc","xyz","ffd","ghj","llh","ppk");
+		List<String> sortedData = data.parallelStream().sorted().collect(Collectors.toList());
+		System.out.println(sortedData);
+	}
 }
